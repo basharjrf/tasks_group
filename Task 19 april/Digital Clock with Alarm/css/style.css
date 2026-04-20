@@ -3,6 +3,7 @@
 }
 
 body {
+
     margin: 0;
     min-height: 100vh;
     display: grid;
@@ -18,10 +19,41 @@ body {
 }
 
 .card {
+    position: relative;
+    overflow: hidden;
     padding: 28px;
     border-radius: 18px;
     background: #ffffff;
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+    box-shadow: 0 20px 45px #004af7;
+    transform-origin: center bottom;
+    will-change: transform;
+}
+
+.card>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card-dots {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 10px;
+    padding: 18px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.dot {
+    width: 6px;
+    aspect-ratio: 1;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.22);
+    justify-self: center;
+    align-self: center;
+    transform: scale(0.75);
 }
 
 .label {
@@ -90,6 +122,22 @@ button.secondary {
     color: #dc2626;
     font-size: 1.4rem;
     font-weight: 800;
+}
+
+.card.ringing .dot {
+    background: rgba(220, 38, 38, 0.3);
+}
+
+.card.ringing {
+    box-shadow: 0 24px 55px rgba(220, 38, 38, 0.22);
+}
+
+.snooze-escaping {
+    position: fixed;
+    left: 24px;
+    top: 24px;
+    z-index: 50;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.2);
 }
 
 .hidden {

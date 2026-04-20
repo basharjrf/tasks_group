@@ -1,48 +1,57 @@
 body {
-    margin: 40px;
-    font-family: Arial, sans-serif;
+  margin: 40px;
+  font-family: Arial, sans-serif;
+  background: #e9e1e1;
 }
 
 .rating {
-    display: flex;
-    gap: 6px;
-    margin: 16px 0;
+  display: flex;
+  gap: 6px;
+  margin: 16px 0;
 }
 
 .star {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .star::before,
 .star-fill::before {
-    content: "\2605";
-    position: absolute;
-    inset: 0;
-    font-size: 40px;
-    line-height: 1;
+  content: "\2605";
+  position: absolute;
+  inset: 0;
+  font-size: 40px;
+  line-height: 1;
 }
 
 .star::before {
-    color: #cccccc;
+  color: #cccccc;
 }
 
 .star-fill {
-    position: absolute;
-    inset: 0;
-    width: 0;
-    overflow: hidden;
+  position: absolute;
+  inset: 0;
+  width: 0;
+  overflow: hidden;
 }
 
 .star-fill::before {
-    color: #f5b301;
+  color: #f4e843;
 }
 
 #rating-text {
-    font-size: 18px;
+  font-size: 18px;
+}
+.container {
+  width: 300px;
+  margin: 100px auto;
+  background: rgb(158, 149, 151);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px;
 }

@@ -1,94 +1,95 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    padding: 40px 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #4a3a3ad6;
+  padding: 40px 20px;
 }
 
 .tabs {
-    max-width: 700px;
-    margin: 0 auto;
-    background: #ffffff;
-    border: 1px solid #dcdcdc;
-    border-radius: 10px;
-    overflow: hidden;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #eae8ed;
+  border: 1px solid #060606;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px;
 }
 
 .tab-form {
-    display: grid;
-    gap: 12px;
-    padding: 20px;
-    border-bottom: 1px solid #dcdcdc;
-    background: #fafafa;
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  border-bottom: 1px solid #000000;
+  background: hsl(0, 13%, 92%);
 }
 
 .tab-form input,
 .tab-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #cccccc;
-    border-radius: 6px;
-    font: inherit;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #110f0f;
+  border-radius: 6px;
+  font: inherit;
 }
 
 .tab-form textarea {
-    min-height: 100px;
-    resize: vertical;
+  min-height: 100px;
+  resize: vertical;
 }
 
 .tab-form button {
-    width: fit-content;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 6px;
-    background: #0078d4;
-    color: #ffffff;
-    font-size: 15px;
-    cursor: pointer;
+  width: fit-content;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #413434;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .tab-form button:hover {
-    background: #0064b1;
+  background: #7b3d4a;
 }
 
 .tab-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    background: #eeeeee;
-    border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  flex-wrap: wrap;
+  background: #e2c6c6;
+  border-bottom: 1px solid #ebd9d9;
 }
 
 .tab-button {
-    border: none;
-    background: transparent;
-    padding: 14px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.2s ease;
+  border: none;
+  background: transparent;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
 }
 
 .tab-button:hover {
-    background: #e2e2e2;
+  background: #aaaaaa;
 }
 
 .tab-button.active {
-    background: #ffffff;
-    border-bottom: 2px solid #0078d4;
-    font-weight: bold;
+  background: #fffefe;
+  border-bottom: 2px solid #482a2a;
+  font-weight: bold;
 }
 
 .tab-content {
-    padding: 24px;
+  padding: 24px;
 }
 
 .tab-panel {
-    display: none;
+  display: none;
 }
 
 .tab-panel.active {
-    display: block;
+  display: block;
 }

@@ -66,6 +66,4 @@ addTabButton.addEventListener("click", () => {
     tabTextInput.value = "";
 });
 
-
-
 bindTabEvents();

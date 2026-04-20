@@ -1,24 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Rating Widget</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h1>Star Rating Widget</h1>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Star Rating Widget</h1>
 
-    <div id="rating" class="rating">
-        <button class="star" type="button" data-value="1" aria-label="1 star"><span class="star-fill"></span></button>
-        <button class="star" type="button" data-value="2" aria-label="2 stars"><span class="star-fill"></span></button>
-        <button class="star" type="button" data-value="3" aria-label="3 stars"><span class="star-fill"></span></button>
-        <button class="star" type="button" data-value="4" aria-label="4 stars"><span class="star-fill"></span></button>
-        <button class="star" type="button" data-value="5" aria-label="5 stars"><span class="star-fill"></span></button>
+      <div id="rating" class="rating">
+        <button class="star" type="button" data-value="1" aria-label="1 star">
+          <span class="star-fill"></span>
+        </button>
+        <button class="star" type="button" data-value="2" aria-label="2 stars">
+          <span class="star-fill"></span>
+        </button>
+        <button class="star" type="button" data-value="3" aria-label="3 stars">
+          <span class="star-fill"></span>
+        </button>
+        <button class="star" type="button" data-value="4" aria-label="4 stars">
+          <span class="star-fill"></span>
+        </button>
+        <button class="star" type="button" data-value="5" aria-label="5 stars">
+          <span class="star-fill"></span>
+        </button>
+      </div>
+
+      <p id="rating-text">Choose a rating</p>
     </div>
-
-    <p id="rating-text">Choose a rating</p>
-
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
