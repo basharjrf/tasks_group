@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Alarm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="clock-app">
+        <section class="card">
+            <p class="label">Current Time</p>
+            <h1 id="clock" class="clock">00:00:00</h1>
+
+            <form id="alarm-form" class="alarm-form">
+                <label for="alarm-time">Alarm time</label>
+                <div class="controls">
+                    <input id="alarm-time" name="alarm-time" type="time" required>
+                    <button type="submit">Set Alarm</button>
+                    <button id="clear-alarm" type="button" class="secondary">Clear</button>
+                </div>
+            </form>
+
+            <p id="alarm-status" class="status">No alarm set.</p>
+
+            <div id="ringing-actions" class="ringing-actions hidden">
+                <p class="alert">Wake up!</p>
+                <div class="controls">
+                    <button id="snooze-btn" type="button">Snooze 2 Min</button>
+                    <button id="dismiss-btn" type="button" class="secondary">Dismiss</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

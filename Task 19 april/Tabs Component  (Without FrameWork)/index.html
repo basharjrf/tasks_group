@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Component</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab-form">
+            <input type="text" id="tabTitle" placeholder="Tab name">
+            <textarea id="tabText" placeholder="Tab content"></textarea>
+            <button id="addTabButton" type="button">Add Tab</button>
+        </div>
+
+        <div class="tab-buttons">
+            <button class="tab-button active" data-tab="0">HTML</button>
+            <button class="tab-button" data-tab="1">CSS</button>
+            <button class="tab-button" data-tab="2">JavaScript</button>
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-panel active">
+                <h2>HTML</h2>
+                <p>HTML is used to build the structure of the page.</p>
+            </div>
+
+            <div class="tab-panel">
+                <h2>CSS</h2>
+                <p>CSS is used to style the page and make it look better.</p>
+            </div>
+
+            <div class="tab-panel">
+                <h2>JavaScript</h2>
+                <p>JavaScript is used to add interaction and dynamic behavior.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
